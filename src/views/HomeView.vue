@@ -5,6 +5,7 @@
     <v-row class="mt-3 header-containers px-7">
       <v-col class="header-text" cols="12" md="6">
         <img class="img-right" src="../assets/design.svg" alt="" />
+        <img class="img-left" src="../assets/design1.svg" alt="" />
         <p class="header-text__heading mt-5">
           <span>Be the boss of your </span> Trading Journey
         </p>
@@ -17,14 +18,20 @@
         </p>
       </v-col>
     </v-row>
+
+    <section class="section-container mt-16 px-7">
+      <mp-intro-card />
+    </section>
   </div>
 </template>
 
 <script>
 import MpHeader from '@/components/MpHeader.vue';
+import MpIntroCard from '@/components/MpIntroCard.vue';
 export default {
   components: {
     MpHeader,
+    MpIntroCard,
   },
 };
 </script>
@@ -45,6 +52,12 @@ export default {
   & .img-right {
     position: absolute;
     right: 5rem;
+  }
+
+  & .img-left {
+    position: absolute;
+    left: 5rem;
+    bottom: -1rem;
   }
 
   &__heading {
