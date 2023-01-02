@@ -39,7 +39,8 @@ html {
 }
 
 #app {
-  background: #1e1e1e;
+  /* background: #1e1e1e; */
   color: #000;
+  font-family: 'Manrope';
 }
 </style>

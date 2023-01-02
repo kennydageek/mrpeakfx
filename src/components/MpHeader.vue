@@ -48,7 +48,7 @@ export default {};
   line-height: 6rem;
   align-self: center;
   margin-bottom: 0;
-  font-family: 'avenir-lt-pro-bold';
+  font-family: 'avenir-lt-pro';
   font-weight: 600;
 }
 </style>
