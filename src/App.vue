@@ -43,4 +43,10 @@ html {
   color: #000;
   font-family: 'Manrope';
 }
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 56.3%;
+  }
+}
 </style>

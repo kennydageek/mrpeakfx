@@ -26,21 +26,77 @@
     <section class="section-container section-card px-0 px-md-7">
       <mp-intro-card />
     </section>
+
+    <section class="section-metrics mt-16 pt-10 px-10">
+      <h1 class="section-heading">Your best choice for your Forex journey</h1>
+
+      <p class="section-subheading mt-8">
+        End-to-end trading and market analysis in a single solution. You’re in
+        the right platform to help realize your profits
+      </p>
+
+      <v-row class="mt-12 justify-center">
+        <v-col cols="12" md="4" class="first-col red text-center">
+          <p class="metric-no mb-3">100+</p>
+          <p class="client">clients work nationwide</p>
+        </v-col>
+        <v-col cols="12" md="4" class="d-flex justify-center justify-md-start">
+          <mp-metric-card />
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+          class="d-flex align-center align-md-start flex-column"
+        >
+          <mp-metric-card>
+            <template #img><img src="../assets/02.svg" alt="" /></template>
+
+            <template #heading
+              ><p class="card-heading mt-4">Consistent Service</p></template
+            >
+            <template #content
+              ><p class="card-content mb-0 d-none"></p
+            ></template>
+          </mp-metric-card>
+
+          <mp-metric-card class="mt-5">
+            <template #img><img src="../assets/03.svg" alt="" /></template>
+
+            <template #heading
+              ><p class="card-heading mt-4">Secure parameters</p></template
+            >
+            <template #content
+              ><p class="card-content mb-0 d-none">
+                End-to-end payments and financial management in a single
+                solution. Meet the right platform to help realize.
+              </p></template
+            >
+          </mp-metric-card>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 
 <script>
 import MpHeader from '@/components/MpHeader.vue';
 import MpIntroCard from '@/components/MpIntroCard.vue';
+import MpMetricCard from '@/components/MpMetricCard.vue';
 export default {
   components: {
     MpHeader,
     MpIntroCard,
+    MpMetricCard,
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.section-metrics {
+  min-height: 30rem;
+  // background: red;
+}
+
 .home-container {
   background: #fff;
   // padding: 0 10rem;
@@ -101,9 +157,56 @@ export default {
   }
 }
 
+.section-heading {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #202020;
+}
+
+.section-subheading {
+  font-family: 'DM Sans', serif;
+  // font-size: 1.6rem;
+  color: #525252;
+  font-weight: 500;
+  width: 37rem;
+}
+
+.first-col {
+  align-self: center;
+}
+
+.metric-no {
+  font-weight: 600;
+  font-size: 3.3rem;
+  color: #001233;
+}
+
+.client {
+  font-size: 2.8rem;
+}
+
+.card-heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 2rem;
+}
+
+.card-content {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 959.98px) {
   .section-card {
     margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 943.98px) {
+  .section-subheading {
+    width: 100%;
   }
 }
 </style>
