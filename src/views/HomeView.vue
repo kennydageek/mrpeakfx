@@ -5,13 +5,17 @@
     <v-row class="mt-3 header-containers px-7">
       <v-col class="header-text" cols="12" md="6">
         <img class="img-right" src="../assets/design.svg" alt="" />
-        <img class="img-left" src="../assets/design1.svg" alt="" />
+        <img
+          class="img-left d-none d-md-inline"
+          src="../assets/design1.svg"
+          alt=""
+        />
         <p class="header-text__heading mt-5">
           <span>Be the boss of your </span> Trading Journey
         </p>
       </v-col>
       <v-col class="" cols="12" md="5">
-        <p class="header-quote mt-9">
+        <p class="header-quote mt-0 mt-md-9">
           “If you can learn to create a state of mind that is not affected by
           the market’s behaviour, the struggle will cease to exist...”
           <br /><span>Mark Douglas</span>
@@ -19,7 +23,7 @@
       </v-col>
     </v-row>
 
-    <section class="section-container mt-16 px-7">
+    <section class="section-container section-card px-0 px-md-7">
       <mp-intro-card />
     </section>
   </div>
@@ -57,7 +61,7 @@ export default {
   & .img-left {
     position: absolute;
     left: 5rem;
-    bottom: -1rem;
+    bottom: -3rem;
   }
 
   &__heading {
@@ -92,6 +96,14 @@ export default {
 
   & span {
     font-family: 'freestyle-script';
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 959.98px) {
+  .section-card {
+    margin-top: 8rem;
   }
 }
 </style>

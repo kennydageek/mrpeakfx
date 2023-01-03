@@ -1,11 +1,11 @@
 <template>
-  <v-row class="card-container">
+  <v-row class="card-container mt-10 pt-10">
     <v-col cols="12" md="5" class="left-col pa-0">
       <div class="image-container d-flex d-md-block justify-center px-5">
         <img src="../assets/mrpeak.png" alt="" />
       </div>
     </v-col>
-    <v-col cols="12" md="7" class="intro-container py-5 py-md-16 pr-0 pr-md-16">
+    <v-col cols="12" md="7" class="intro-container pr-0 pr-md-16">
       <!-- <p class="about d-none d-sm-block">about</p> -->
       <p class="heading-title mb-0 text-center text-md-left">
         Forex trading expert
@@ -13,13 +13,17 @@
       <p class="intro-text mb-0 text-center text-md-left">
         Hi, my name is Mr PeakFx
       </p>
-      <p
-        class="intro-details px-16 px-md-0 mb-0 mt-6 text-justify text-md-left"
-      >
+      <p class="intro-details px-16 px-md-0 mb-0 mt-6 text-center text-md-left">
         I am a professional trader who have been in the trading space for about
         5 years . My expertise is to take you from the place of inconsistent
         trading results to a place of bigger wins.
       </p>
+
+      <div class="btn-cta d-flex justify-center justify-md-start mt-8">
+        <a href="#">
+          <button class="button">Let’s Talk 👋</button>
+        </a>
+      </div>
     </v-col>
   </v-row>
 </template>
@@ -38,7 +42,6 @@ export default {};
   );
   box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.03);
   border-radius: 30px;
-  min-height: 30rem;
   justify-content: space-between;
 }
 
@@ -84,6 +87,21 @@ export default {};
 .intro-details {
   color: #bcc0cc;
   font-size: 1.8rem;
+}
+
+.button {
+  font-family: 'Dm Sans';
+  font-weight: 700;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  color: white;
+
+  &:hover {
+    background: #fff;
+    color: #1e1e1e;
+  }
 }
 
 @media screen and (max-width: 554.98px) {
