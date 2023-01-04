@@ -36,8 +36,8 @@
       </p>
 
       <v-row class="mt-12 justify-center">
-        <v-col cols="12" md="4" class="first-col red text-center">
-          <p class="metric-no mb-3">100+</p>
+        <v-col cols="12" md="4" class="first-col text-center">
+          <p class="metric-no mb-0">100+</p>
           <p class="client">clients work nationwide</p>
         </v-col>
         <v-col cols="12" md="4" class="d-flex justify-center justify-md-start">
@@ -75,6 +75,14 @@
         </v-col>
       </v-row>
     </section>
+
+    <section class="section-service black px-7 px-sm-16">
+      <v-row>
+        <v-col cols="12" md="3" class="mt-3 pa-0 mb-3"
+          ><mp-service-card
+        /></v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 
@@ -82,11 +90,13 @@
 import MpHeader from '@/components/MpHeader.vue';
 import MpIntroCard from '@/components/MpIntroCard.vue';
 import MpMetricCard from '@/components/MpMetricCard.vue';
+import MpServiceCard from '@/components/MpServiceCard.vue';
 export default {
   components: {
     MpHeader,
     MpIntroCard,
     MpMetricCard,
+    MpServiceCard,
   },
 };
 </script>
@@ -182,7 +192,8 @@ export default {
 }
 
 .client {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
 }
 
 .card-heading {
@@ -196,6 +207,15 @@ export default {
   font-size: 0.8rem;
   color: #000;
   font-weight: 500;
+}
+
+.section-service {
+  position: absolute;
+  left: 0;
+  margin-top: 10rem;
+  width: 100%;
+  min-height: 30rem;
+  color: white;
 }
 
 @media screen and (min-width: 959.98px) {
