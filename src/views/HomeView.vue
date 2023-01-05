@@ -89,15 +89,52 @@
       </v-row>
     </section>
 
-    <section class="section-testimonials mt-16 px-7 px-sm-16">
+    <section class="section-testimonials mt-16 px-7 px-sm-16 pb-4">
       <p class="section-testimonials__heading mb-0">SOCIAL PROOF</p>
       <p class="section-testimonials__subheading mt-6 mb-0">
         Don't just take my word for it, Hear what others are saying about it
       </p>
-
-      <!-- <mp-review-card /> -->
-
       <mp-carousel-comp class="mt-10" />
+    </section>
+
+    <section class="section-about mt-16 px-7 pt-16 pb-0">
+      <v-row class="justify-space-between row-wrapper">
+        <v-col cols="12" md="5" class="align-self-end">
+          <div class="section-about-img-container">
+            <img src="../assets/about-img.png" alt="" />
+          </div>
+        </v-col>
+        <v-col cols="12" md="6" class="align-self-start">
+          <div class="section-about-text-wrapper">
+            <p class="section-about__heading mb-2">Learn more about Me</p>
+            <p class="section-about__intro mb-3">I am Mr PeakFX</p>
+            <p class="section-about__paragraph mb-0">
+              I am a professional trader who have been in the trading space
+              since 2019. I have gathered lots of experience in real time
+              trading and I have witnessed all there is as a beginner,
+              intermediate and pro trading.
+            </p>
+
+            <p class="section-about__paragraph mb-2">
+              With my years of experience, I’ve been able to understand the
+              Forex Market well enough to figure out different trading analysis
+              and find patterns that produces consistent profitable trades in
+              the Forex Market.
+            </p>
+
+            <p class="section-about__paragraph mb-10">
+              As a foremost forex influencer in Nigeria and I am on a mission to
+              replicate my profitable trading system to as many traders or
+              potential traders that come my way.
+            </p>
+
+            <p class="section-about__paragraph mb-0">
+              So, feel free to to send me a message, even if you are just
+              putting out a few feelers.
+            </p>
+          </div>
+        </v-col>
+      </v-row>
     </section>
   </div>
 </template>
@@ -107,7 +144,6 @@ import MpHeader from '@/components/MpHeader.vue';
 import MpIntroCard from '@/components/MpIntroCard.vue';
 import MpMetricCard from '@/components/MpMetricCard.vue';
 import MpServiceCard from '@/components/MpServiceCard.vue';
-// import MpReviewCard from '@/components/MpReviewCard.vue';
 import MpCarouselComp from '@/components/MpCarouselComp.vue';
 export default {
   components: {
@@ -115,7 +151,6 @@ export default {
     MpIntroCard,
     MpMetricCard,
     MpServiceCard,
-    // MpReviewCard,
     MpCarouselComp,
   },
 
@@ -284,6 +319,42 @@ export default {
   }
 }
 
+.section-about {
+  & .row-wrapper {
+    background-image: url('../assets/about-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-img-container {
+    // width: 80%;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-weight: 800;
+    font-size: 50px;
+    color: #000;
+  }
+
+  &__intro {
+    font-family: 'freestyle-script';
+    font-size: 48px;
+  }
+
+  &__paragraph {
+    text-align: justify;
+  }
+
+  &-text-wrapper {
+    // width: 80%;
+    // margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 959.98px) {
   .section-card {
     margin-top: 8rem;
@@ -292,6 +363,12 @@ export default {
 
 @media screen and (max-width: 943.98px) {
   .section-subheading {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .section-testimonials__subheading {
     width: 100%;
   }
 }

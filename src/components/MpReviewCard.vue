@@ -31,7 +31,7 @@ export default {
   min-height: 214px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.1);
 
   & .name {
     color: #002855;
