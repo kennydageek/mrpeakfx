@@ -3,22 +3,26 @@
     <div class="review-card-container-header d-flex mb-7">
       <img src="../assets/charles.svg" alt="" />
       <div class="ml-3 mb-0 align-self-center">
-        <p class="name mb-1">Charles</p>
-        <p class="role mb-0">Mentee</p>
+        <p class="name mb-1">{{ customers.name }}</p>
+        <p class="role mb-0">{{ customers.role }}</p>
       </div>
     </div>
 
     <p class="review-card-container__content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus
-      arcu, dictum in eros ut, dignissim efficitur tortor. Integer eget eros sed
-      justo finibus vehicula sit amet non mauris. Cras condimentum ullamcorper
-      lectus, vitae tempor ante gravida eget.
+      {{ customers.review }}
     </p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    customers: {
+      type: Object,
+      default: () => {},
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

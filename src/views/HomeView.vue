@@ -95,7 +95,9 @@
         Don't just take my word for it, Hear what others are saying about it
       </p>
 
-      <mp-review-card />
+      <!-- <mp-review-card /> -->
+
+      <mp-carousel-comp class="mt-10" />
     </section>
   </div>
 </template>
@@ -105,14 +107,16 @@ import MpHeader from '@/components/MpHeader.vue';
 import MpIntroCard from '@/components/MpIntroCard.vue';
 import MpMetricCard from '@/components/MpMetricCard.vue';
 import MpServiceCard from '@/components/MpServiceCard.vue';
-import MpReviewCard from '@/components/MpReviewCard.vue';
+// import MpReviewCard from '@/components/MpReviewCard.vue';
+import MpCarouselComp from '@/components/MpCarouselComp.vue';
 export default {
   components: {
     MpHeader,
     MpIntroCard,
     MpMetricCard,
     MpServiceCard,
-    MpReviewCard,
+    // MpReviewCard,
+    MpCarouselComp,
   },
 
   data() {

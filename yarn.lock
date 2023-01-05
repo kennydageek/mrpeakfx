@@ -965,6 +965,62 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@cfcs/core@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@cfcs/core/-/core-0.0.4.tgz#5c1e89c2c170dfa9ba69450376ed0d894e19e2a1"
+  integrity sha512-Y/BD2l+XpGtx2LT/ehdqUyvJ6OpI3F6yAQMNKj1t57WhzQX1AS6uEQRLmgPWd75fzsyV7u4Aia/+5KeCqgHuNg==
+  dependencies:
+    "@egjs/component" "^3.0.2"
+
+"@egjs/agent@^2.2.1":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.4.3.tgz#6d44e2fb1ff7bab242c07f82732fe60305ac6f06"
+  integrity sha512-XvksSENe8wPeFlEVouvrOhKdx8HMniJ3by7sro2uPF3M6QqWwjzVcmvwoPtdjiX8O1lfRoLhQMp1a7NGlVTdIA==
+
+"@egjs/axes@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@egjs/axes/-/axes-3.8.3.tgz#0c959682ffdb4a239d4b1289cf061aeb44f3e4ba"
+  integrity sha512-T0+71+glVCxSRnJim7smdGLrmsGmEuoJ62RXBMy7lpsePbXlKmtnFFKgr1tkJJyghJXW3zZNHefCC4nrzEjfEg==
+  dependencies:
+    "@cfcs/core" "^0.0.4"
+    "@egjs/agent" "^2.2.1"
+    "@egjs/component" "^3.0.1"
+
+"@egjs/component@^3.0.1", "@egjs/component@^3.0.2":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-3.0.4.tgz#ad7b53794b2a612806179a188ad828acb9525f61"
+  integrity sha512-sXA7bGbIeLF2OAw/vpka66c6QBBUPcA4UUhR4WGJfnp2XWdiI8QrnJGJMr/UxpE/xnevX9tN3jvNPlW8WkHl3g==
+
+"@egjs/flicking@~4.10.4":
+  version "4.10.4"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-4.10.4.tgz#d7ac1cd574a625ce7b8aed08df14a7a589982e4d"
+  integrity sha512-0tmonngn2N68eYhobrKWx7oc3shfXS8idzC/S0w3byKK8LJqDrktZ/GcZAIXrd2uZqr8XJImY7frWnaYBU0w4g==
+  dependencies:
+    "@egjs/axes" "^3.8.3"
+    "@egjs/component" "^3.0.1"
+    "@egjs/imready" "^1.3.1"
+    "@egjs/list-differ" "^1.0.0"
+
+"@egjs/imready@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@egjs/imready/-/imready-1.3.1.tgz#00d6008a07a0ae7eb1865e7aedcedb964c60c567"
+  integrity sha512-ReDNST6BEt65lApC4e241jZjexKPn1FvtDEIctuJ/I4uHG6Qm9KBVrHiZhLcPCRYAQPkYkphP/0v8nAVzT69qw==
+  dependencies:
+    "@egjs/component" "^3.0.1"
+
+"@egjs/list-differ@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
+  integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
+
+"@egjs/vue-flicking@^4.10.4":
+  version "4.10.4"
+  resolved "https://registry.yarnpkg.com/@egjs/vue-flicking/-/vue-flicking-4.10.4.tgz#366d732cbd6ae235608bdefc7a32cca3bc97152c"
+  integrity sha512-bnjfz0VQVZKbp8H+xX+/66rE4ZMtS/RWAcJwK6DfMQhiaSVkGXzhcfT9R3hFFO7IvFfeq+K2T8soz+F6rsSeeQ==
+  dependencies:
+    "@egjs/flicking" "~4.10.4"
+    "@egjs/list-differ" "^1.0.0"
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
@@ -1058,6 +1114,11 @@
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
+
+"@mdi/font@^7.1.96":
+  version "7.1.96"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-7.1.96.tgz#211ca4acfa31964278e5085de595e8c73967d400"
+  integrity sha512-Imag6npmfkBDi2Ze2jiZVAPTDIKLxhz2Sx82xJ2zctyAU5LYJejLI5ChnDwiD9bMkQfVuzEsI98Q8toHyC+HCg==
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
@@ -5783,6 +5844,11 @@ vue@^2.6.14:
   dependencies:
     "@vue/compiler-sfc" "2.7.14"
     csstype "^3.1.0"
+
+vueperslides@^2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/vueperslides/-/vueperslides-2.16.0.tgz#db1126abdf45fcdfeb722c7e4c252df3cbcfffbe"
+  integrity sha512-HosQXtbFr7qexeLTb6k7H+2Q7iODELGRalRDmPviMulSLDUBub8lmeVjda8TK3IcKpD0wma0A7bg085HtwDiRg==
 
 vuetify@^2.6.13:
   version "2.6.13"
