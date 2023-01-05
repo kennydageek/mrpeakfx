@@ -88,6 +88,15 @@
         /></v-col>
       </v-row>
     </section>
+
+    <section class="section-testimonials mt-16 px-7 px-sm-16">
+      <p class="section-testimonials__heading mb-0">SOCIAL PROOF</p>
+      <p class="section-testimonials__subheading mt-6 mb-0">
+        Don't just take my word for it, Hear what others are saying about it
+      </p>
+
+      <mp-review-card />
+    </section>
   </div>
 </template>
 
@@ -96,12 +105,14 @@ import MpHeader from '@/components/MpHeader.vue';
 import MpIntroCard from '@/components/MpIntroCard.vue';
 import MpMetricCard from '@/components/MpMetricCard.vue';
 import MpServiceCard from '@/components/MpServiceCard.vue';
+import MpReviewCard from '@/components/MpReviewCard.vue';
 export default {
   components: {
     MpHeader,
     MpIntroCard,
     MpMetricCard,
     MpServiceCard,
+    MpReviewCard,
   },
 
   data() {
@@ -242,20 +253,31 @@ export default {
 }
 
 .section-service {
-  position: absolute;
-  left: 0;
+  position: relative;
+  // left: 0;
   margin-top: 10rem;
   width: 100%;
-  min-height: 30rem;
   color: white;
+}
 
-  // & .service-col:not(:last-of-type) {
-  //   border-right: 1px solid #fff;
-  // }
+.section-testimonials {
+  // position: absoute;
+  // bottom: 0;
 
-  // & .service-col:not(:first-of-type) {
-  //   border-left: 1px solid #fff;
-  // }
+  &__heading {
+    font-size: 1.6rem;
+    color: #0582ff;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__subheading {
+    text-align: center;
+    margin: 0 auto;
+    width: 25rem;
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 959.98px) {

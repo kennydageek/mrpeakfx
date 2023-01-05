@@ -6,7 +6,7 @@
       ><p class="card-heading mt-7">Accurate signals & Trade-Idea</p></slot
     >
     <slot name="content">
-      <p class="card-content mb-0">
+      <p class="card-content mb-0 mt-2">
         End-to-end payments and financial management in a single solution. Meet
         the right platform to help realize.
       </p></slot
