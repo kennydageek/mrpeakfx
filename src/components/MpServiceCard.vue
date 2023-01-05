@@ -1,15 +1,15 @@
 <template>
-  <div class="card-container">
+  <div class="card-container pb-10">
     <div class="card-top-img">
-      <img src="../assets/mentorship.png" alt="" class="card-img" />
+      <img :src="items.img" alt="" class="card-img" />
     </div>
     <div class="card-logo-img mt-8 mb-16">
-      <img src="../assets/me-box.svg" alt="" />
+      <img :src="items.logo" alt="" />
     </div>
 
     <div class="card-footer mt-16">
-      <p class="title">MENTORSHIP</p>
-      <router-link to="/" class="d-flex link">
+      <p class="title">{{ items.title }}</p>
+      <router-link :to="items.path" class="d-flex link">
         <p class="text mb-0">Read more</p>
         <img src="../assets/rarr.svg" class="ml-2" alt="" />
       </router-link>
@@ -18,11 +18,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    items: {
+      type: Object,
+      default: () => {},
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .card-container {
+  // border-right: 1px solid #fff;
   //   background: red;
   //   width: 23%;
 }

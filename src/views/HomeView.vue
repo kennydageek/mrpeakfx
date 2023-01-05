@@ -77,9 +77,14 @@
     </section>
 
     <section class="section-service black px-7 px-sm-16">
-      <v-row>
-        <v-col cols="12" md="3" class="mt-3 pa-0 mb-3"
-          ><mp-service-card
+      <v-row class="justify-center">
+        <v-col
+          cols="12"
+          md="3"
+          class="service-col mt-3 pa-0 mb-3"
+          v-for="item in items"
+          :key="item.title"
+          ><mp-service-card :items="item"
         /></v-col>
       </v-row>
     </section>
@@ -97,6 +102,33 @@ export default {
     MpIntroCard,
     MpMetricCard,
     MpServiceCard,
+  },
+
+  data() {
+    return {
+      items: [
+        {
+          img: require('@/assets/mentorship.png'),
+          logo: require('@/assets/me-box.svg'),
+          title: 'MENTORSHIP',
+          path: '/',
+        },
+
+        {
+          img: require('@/assets/trade-idea.png'),
+          logo: require('@/assets/ts-box.svg'),
+          title: 'TRADE-IDEA/SIGNAL',
+          path: '/',
+        },
+
+        {
+          img: require('@/assets/community.png'),
+          logo: require('@/assets/co-box.svg'),
+          title: 'JOIN OUR COMMUNITY',
+          path: '/',
+        },
+      ],
+    };
   },
 };
 </script>
@@ -216,6 +248,14 @@ export default {
   width: 100%;
   min-height: 30rem;
   color: white;
+
+  // & .service-col:not(:last-of-type) {
+  //   border-right: 1px solid #fff;
+  // }
+
+  // & .service-col:not(:first-of-type) {
+  //   border-left: 1px solid #fff;
+  // }
 }
 
 @media screen and (min-width: 959.98px) {
