@@ -122,16 +122,42 @@
               the Forex Market.
             </p>
 
-            <p class="section-about__paragraph mb-10">
+            <p class="section-about__paragraph mb-5">
               As a foremost forex influencer in Nigeria and I am on a mission to
               replicate my profitable trading system to as many traders or
               potential traders that come my way.
             </p>
 
-            <p class="section-about__paragraph mb-0">
+            <p class="section-about__paragraph mb-16">
               So, feel free to to send me a message, even if you are just
               putting out a few feelers.
             </p>
+          </div>
+        </v-col>
+      </v-row>
+    </section>
+
+    <section class="section-footer px-7">
+      <v-row class="section-footer-wrapper pa-10">
+        <v-col cols="12" md="7" class="section-footer-first-col">
+          <p class="section-footer-first-col__heading">
+            Get the best out of your trading experience
+          </p>
+          <p class="section-footer-first-col__contact mb-0">
+            Contact Us: +2348076392730
+          </p>
+        </v-col>
+        <v-col
+          col="12"
+          md="5"
+          class="section-footer-second-col align-self-center"
+        >
+          <div
+            class="section-footer-second-col-socials d-flex justify-center mt-8 mt-md-0"
+          >
+            <img src="../assets/telegram.svg" alt="" />
+            <img src="../assets/instagram.svg" class="ml-5" alt="" />
+            <img src="../assets/youtube.svg" class="ml-5" alt="" />
           </div>
         </v-col>
       </v-row>
@@ -191,6 +217,7 @@ export default {
 
 .home-container {
   background: #fff;
+  height: 0vh;
   // padding: 0 10rem;
 }
 
@@ -352,6 +379,35 @@ export default {
   &-text-wrapper {
     // width: 80%;
     // margin: 0 auto;
+  }
+}
+
+.section-footer {
+  position: relative;
+  top: -2rem;
+
+  &-wrapper {
+    background-color: #1e1e1e;
+  }
+
+  &-first-col {
+    &__heading {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    &__contact {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  &-second-col {
+    & img {
+      width: 3rem;
+    }
   }
 }
 

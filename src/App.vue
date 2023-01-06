@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
-    <v-app>
-      <v-main>
-        <router-view />
-      </v-main>
-    </v-app>
-  </div>
+  <v-app>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap');
 
 @font-face {
@@ -39,7 +37,7 @@ html {
 }
 
 #app {
-  background: #1e1e1e;
+  // background: #1e1e1e;
   color: #000;
   font-family: 'Manrope';
 }

@@ -78,7 +78,7 @@ export default {};
 
 .intro-text {
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 56px;
   color: #fff;
   line-height: 4rem;
   //   position: relative;
@@ -86,17 +86,18 @@ export default {};
 
 .intro-details {
   color: #bcc0cc;
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .button {
   font-family: 'Dm Sans';
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 18px;
   border: 1px solid #fff;
   background: transparent;
   padding: 0.5rem 1.5rem;
   color: white;
+  transition: all 0.2s ease;
 
   &:hover {
     background: #fff;
@@ -106,16 +107,25 @@ export default {};
 
 @media screen and (max-width: 554.98px) {
   .image-container {
+    // height: 420px;
+    width: 420px;
+    margin: 0 auto;
     & img {
       width: 100%;
+      // height: 100%;
     }
+  }
+
+  .intro-text {
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
 @media screen and (max-width: 498.98px) {
   .intro-text {
-    font-size: 3.6rem;
-    line-height: 5rem;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 </style>
