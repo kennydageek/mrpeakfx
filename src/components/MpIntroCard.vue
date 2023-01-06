@@ -50,9 +50,11 @@ export default {};
 }
 
 .image-container {
-  width: 100%;
+  margin: 0 auto;
+  width: 420px;
   & img {
     display: block;
+    width: 100%;
   }
 }
 
@@ -108,7 +110,7 @@ export default {};
 @media screen and (max-width: 554.98px) {
   .image-container {
     // height: 420px;
-    width: 420px;
+    width: 100%;
     margin: 0 auto;
     & img {
       width: 100%;

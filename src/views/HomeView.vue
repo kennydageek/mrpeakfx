@@ -1,5 +1,5 @@
 <template>
-  <div class="px-0 px-sm-16 home-container">
+  <div class="px-0 px-sm-8 px-md-16 home-container">
     <mp-header>Home</mp-header>
 
     <v-row class="mt-3 header-containers px-7">
@@ -97,7 +97,7 @@
       <mp-carousel-comp class="mt-10" />
     </section>
 
-    <section class="section-about mt-16 px-7 pt-16 pb-0">
+    <section class="section-about mt-16 pt-16 pb-0">
       <v-row class="justify-space-between row-wrapper">
         <v-col cols="12" md="5" class="align-self-end">
           <div class="section-about-img-container">
@@ -105,7 +105,7 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="align-self-start">
-          <div class="section-about-text-wrapper">
+          <div class="section-about-text-wrapper px-5">
             <p class="section-about__heading mb-2">Learn more about Me</p>
             <p class="section-about__intro mb-3">I am Mr PeakFX</p>
             <p class="section-about__paragraph mb-0">
@@ -137,9 +137,9 @@
       </v-row>
     </section>
 
-    <section class="section-footer px-7">
+    <section class="section-footer">
       <v-row class="section-footer-wrapper pa-10">
-        <v-col cols="12" md="7" class="section-footer-first-col">
+        <v-col cols="12" md="5" class="section-footer-first-col">
           <p class="section-footer-first-col__heading">
             Get the best out of your trading experience
           </p>
@@ -149,7 +149,7 @@
         </v-col>
         <v-col
           col="12"
-          md="5"
+          md="7"
           class="section-footer-second-col align-self-center"
         >
           <div
@@ -240,6 +240,7 @@ export default {
   }
 
   &__heading {
+    line-height: 62px;
     & span {
       color: #000;
     }
