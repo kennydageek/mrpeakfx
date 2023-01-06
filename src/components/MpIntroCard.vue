@@ -126,8 +126,8 @@ export default {};
 
 @media screen and (max-width: 498.98px) {
   .intro-text {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 3rem;
   }
 }
 </style>

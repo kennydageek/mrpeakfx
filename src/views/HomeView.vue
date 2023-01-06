@@ -267,7 +267,7 @@ export default {
 }
 
 .header-quote {
-  font-size: 1.5rem;
+  font-size: 18px;
   justify-self: flex-end;
 
   & span {
@@ -427,6 +427,15 @@ export default {
 @media screen and (max-width: 472px) {
   .section-testimonials__subheading {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 598.99px) {
+  .header-text__heading,
+  .section-heading,
+  .section-footer-first-col__heading {
+    font-size: 35px;
+    line-height: 3rem;
   }
 }
 </style>

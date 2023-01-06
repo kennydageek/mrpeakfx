@@ -40,11 +40,6 @@ html {
   // background: #1e1e1e;
   color: #000;
   font-family: 'Manrope';
-}
-
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 56.3%;
-  }
+  font-size: 1.6rem;
 }
 </style>
