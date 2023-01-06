@@ -120,14 +120,14 @@ export default {};
 
   .intro-text {
     font-size: 45px;
-    line-height: 50px;
+    line-height: 4rem;
   }
 }
 
 @media screen and (max-width: 498.98px) {
   .intro-text {
     font-size: 35px;
-    line-height: 3rem;
+    line-height: 4rem;
   }
 }
 </style>

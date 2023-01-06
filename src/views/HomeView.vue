@@ -2,7 +2,7 @@
   <div class="px-0 px-sm-8 px-md-16 home-container">
     <mp-header>Home</mp-header>
 
-    <v-row class="mt-3 header-containers px-7">
+    <v-row class="mt-3 header-containers px-7 justify-space-between">
       <v-col class="header-text" cols="12" md="6">
         <img class="img-right" src="../assets/design.svg" alt="" />
         <img
@@ -14,7 +14,7 @@
           <span>Be the boss of your </span> Trading Journey
         </p>
       </v-col>
-      <v-col class="" cols="12" md="5">
+      <v-col class="align-self-center" cols="12" md="5">
         <p class="header-quote mt-0 mt-md-9">
           “If you can learn to create a state of mind that is not affected by
           the market’s behaviour, the struggle will cease to exist...”
@@ -28,7 +28,7 @@
     </section>
 
     <section class="section-metrics mt-16 pt-10 px-10">
-      <h1 class="section-heading">Your best choice for your Forex journey</h1>
+      <h1 class="section-heading">The best choice for your Forex journey</h1>
 
       <p class="section-subheading mt-8">
         End-to-end trading and market analysis in a single solution. You’re in
@@ -240,7 +240,7 @@ export default {
   }
 
   &__heading {
-    line-height: 62px;
+    line-height: 4rem;
     & span {
       color: #000;
     }
@@ -435,7 +435,7 @@ export default {
   .section-heading,
   .section-footer-first-col__heading {
     font-size: 35px;
-    line-height: 3rem;
+    line-height: 4rem;
   }
 }
 </style>

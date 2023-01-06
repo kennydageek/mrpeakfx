@@ -40,6 +40,6 @@ html {
   // background: #1e1e1e;
   color: #000;
   font-family: 'Manrope';
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 </style>
