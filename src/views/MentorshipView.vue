@@ -8,7 +8,7 @@
     <v-col
       cols="12"
       md="10"
-      class="mentorship-wrapper-second-col px-0 px-sm-8 px-md-16 py-0"
+      class="mentorship-wrapper-second-col px-0 px-sm-8 px-md-16 py-0 pb-16"
     >
       <mp-header>
         <template v-slot:chevron-left
@@ -69,7 +69,7 @@
                     alt=""
                     class="mr-3 align-self-center"
                   />
-                  <p class="list-item__item align-self-center">
+                  <p class="list-item__item align-self-center mb-0">
                     {{ items.paragraph }}
                   </p>
                 </div>
@@ -78,6 +78,25 @@
           </v-tab-item>
         </v-tabs-items>
       </v-card>
+
+      <div
+        class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
+      >
+        <div
+          class="price-box-price px-10 text-center"
+          v-for="price in prices"
+          :key="price.venue"
+        >
+          <p class="price-box__heading mb-2">{{ price.price }}</p>
+          <p class="price-box__text mb-0">{{ price.venue }}</p>
+        </div>
+
+        <!-- <div class="price-box-price px-10 text-center">
+          <p class="price-box__heading mb-2">$400</p>
+          <p class="price-box__text">In class</p>
+        </div> -->
+      </div>
+      <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">Make Payment</button>
     </v-col>
   </v-row>
 </template>
@@ -93,9 +112,19 @@ export default {
   data() {
     return {
       model: 'tab-2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 
       heading: ['Classic', 'One-on-one'],
+
+      prices: [
+        {
+          price: '$400',
+          venue: 'In Class',
+        },
+        {
+          price: '$500',
+          venue: 'Online',
+        },
+      ],
 
       list: [
         {
@@ -172,6 +201,37 @@ export default {
   box-shadow: none !important;
 }
 
+.price-box {
+  border: 1px solid #979dac;
+  background: #fff;
+  border-radius: 10px;
+  width: 500px;
+
+  &-price {
+  }
+
+  &-price:not(:last-of-type) {
+    border-right: 2px solid #979dac;
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #5e6978;
+  }
+}
+
+button {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0582ff;
+}
+
 @media screen and (max-width: 540px) {
   .page-heading {
     width: 100%;
@@ -180,6 +240,10 @@ export default {
     &__heading {
       font-size: 40px;
     }
+  }
+
+  .price-box {
+    width: 90%;
   }
 }
 </style>
