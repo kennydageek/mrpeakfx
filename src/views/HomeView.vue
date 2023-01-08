@@ -1,6 +1,8 @@
 <template>
   <div class="px-0 px-sm-8 px-md-16 home-container">
-    <mp-header>Home</mp-header>
+    <mp-header>
+      <template v-slot:heading>Home</template>
+    </mp-header>
 
     <v-row class="mt-3 header-containers px-7 justify-space-between">
       <v-col class="header-text" cols="12" md="6">
@@ -187,21 +189,24 @@ export default {
           img: require('@/assets/mentorship.png'),
           logo: require('@/assets/me-box.svg'),
           title: 'MENTORSHIP',
-          path: '/',
+          path: '/services/mentorship',
+          cta: 'Read More',
         },
 
         {
           img: require('@/assets/trade-idea.png'),
           logo: require('@/assets/ts-box.svg'),
           title: 'TRADE-IDEA/SIGNAL',
-          path: '/',
+          path: '/services/signal',
+          cta: 'Read More',
         },
 
         {
           img: require('@/assets/community.png'),
           logo: require('@/assets/co-box.svg'),
           title: 'JOIN OUR COMMUNITY',
-          path: '/',
+          path: '/services/community',
+          cta: 'Join Now',
         },
       ],
     };

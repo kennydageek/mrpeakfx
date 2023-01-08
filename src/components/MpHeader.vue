@@ -1,11 +1,16 @@
 <template>
-  <div class="navigations">
-    <div class="nav-logo">
-      <img src="../assets/logo.svg" alt="logo" />
-    </div>
+  <div class="navigations pr-2 pr-md-8">
+    <div class="d-flex">
+      <slot name="chevron-left"> </slot>
 
-    <div class="line"></div>
-    <p class="heading ml-2"><slot></slot></p>
+      <div class="nav-logo">
+        <img src="../assets/logo.svg" alt="logo" />
+      </div>
+
+      <div class="line d-none d-md-block"></div>
+      <p class="heading ml-0 ml-md-2"><slot name="heading"></slot></p>
+    </div>
+    <p class="navigations__link"><slot name="link"></slot></p>
   </div>
 </template>
 
@@ -17,8 +22,13 @@ export default {};
 .navigations {
   display: flex;
   // background: red;
-  width: 14rem;
+  // width: 14rem;
   justify-content: space-between;
+
+  &__link {
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 .nav-logo {

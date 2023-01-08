@@ -10,7 +10,7 @@
     <div class="card-footer mt-16">
       <p class="title">{{ items.title }}</p>
       <router-link :to="items.path" class="d-flex link">
-        <p class="text mb-0">Read more</p>
+        <p class="text mb-0">{{ items.cta }}</p>
         <img src="../assets/rarr.svg" class="ml-2" alt="" />
       </router-link>
     </div>
@@ -57,7 +57,7 @@ export default {
   & .link {
     color: #0582ff;
     font-weight: 500;
-    // font-size: 1.rem;
+    text-decoration: none;
   }
 }
 </style>
