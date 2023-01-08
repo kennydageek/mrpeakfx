@@ -50,7 +50,7 @@
           <!-- <hr /> -->
         </template>
 
-        <v-tabs-items v-model="model">
+        <v-tabs-items v-model="model" v-if="model === 'tab-1'">
           <v-tab-item v-for="i in 2" :key="i" :value="`tab-${i}`">
             <v-card class="card-content">
               <p class="card-content__heading px-4 px-md-0 mb-0">
@@ -75,27 +75,62 @@
                 </div>
               </div>
             </v-card>
+            <div
+              class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
+            >
+              <div
+                class="price-box-price px-10 text-center"
+                v-for="price in prices"
+                :key="price.venue"
+              >
+                <p class="price-box__heading mb-2">{{ price.price }}</p>
+                <p class="price-box__text mb-0">{{ price.venue }}</p>
+              </div>
+            </div>
+          </v-tab-item>
+        </v-tabs-items>
+
+        <v-tabs-items v-model="model" v-if="model === 'tab-2'">
+          <v-tab-item v-for="i in 2" :key="i" :value="`tab-${i}`">
+            <v-card class="card-content">
+              <p class="card-content__heading px-4 px-md-0 mb-0">
+                Intensive 5weeks training on profitable smart money and Algo
+                concepts.
+              </p>
+
+              <div class="card-content-list px-4 px-md-0 mt-5">
+                <div
+                  class="list-item d-flex mb-4"
+                  v-for="items in list"
+                  :key="items.paragraph"
+                >
+                  <img
+                    src="../assets/rarr.svg"
+                    alt=""
+                    class="mr-3 align-self-center"
+                  />
+                  <p class="list-item__item align-self-center mb-0">
+                    {{ items.paragraph }}
+                  </p>
+                </div>
+              </div>
+            </v-card>
+            <div
+              class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
+            >
+              <div
+                class="price-box-price px-10 text-center"
+                v-for="price in secondprices"
+                :key="price.venue"
+              >
+                <p class="price-box__heading mb-2">{{ price.price }}</p>
+                <p class="price-box__text mb-0">{{ price.venue }}</p>
+              </div>
+            </div>
           </v-tab-item>
         </v-tabs-items>
       </v-card>
 
-      <div
-        class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
-      >
-        <div
-          class="price-box-price px-10 text-center"
-          v-for="price in prices"
-          :key="price.venue"
-        >
-          <p class="price-box__heading mb-2">{{ price.price }}</p>
-          <p class="price-box__text mb-0">{{ price.venue }}</p>
-        </div>
-
-        <!-- <div class="price-box-price px-10 text-center">
-          <p class="price-box__heading mb-2">$400</p>
-          <p class="price-box__text">In class</p>
-        </div> -->
-      </div>
       <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">Make Payment</button>
     </v-col>
   </v-row>
@@ -122,6 +157,17 @@ export default {
         },
         {
           price: '$500',
+          venue: 'Online',
+        },
+      ],
+
+      secondprices: [
+        {
+          price: '$2000',
+          venue: 'In Class',
+        },
+        {
+          price: '$2500',
           venue: 'Online',
         },
       ],
