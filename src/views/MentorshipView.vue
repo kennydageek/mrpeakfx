@@ -131,7 +131,102 @@
         </v-tabs-items>
       </v-card>
 
-      <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">Make Payment</button>
+      <v-dialog
+        v-model="dialog"
+        persistent
+        max-width="600"
+        overlay-color="#33415c"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <button
+            class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16"
+            v-on="on"
+            v-bind="attrs"
+          >
+            Make Payment
+          </button>
+        </template>
+        <v-card class="modal-container px-12 py-10">
+          <p class="modal-container-close" @click="dialog = false">x</p>
+
+          <p class="modal-container__heading mb-6">Make Payment 💳</p>
+          <p class="modal-container__subheading">
+            Subscribe to any of the available plans
+          </p>
+
+          <hr />
+
+          <p class="modal-container__choose my-6">Choose payment method</p>
+
+          <template>
+            <v-tabs v-model="payment" slider-color="#ccc">
+              <v-tab
+                v-for="i in 2"
+                :key="i"
+                :href="`#tab-${i}`"
+                class="black--text tab-comp"
+              >
+                {{ paymentHeading[i - 1] }}
+              </v-tab>
+            </v-tabs>
+            <!-- <br /> -->
+            <!-- <hr /> -->
+          </template>
+
+          <v-tabs-items v-model="payment" v-if="payment === 'tab-1'">
+            <v-tab-item v-for="i in 2" :key="i" :value="`tab-${i}`">
+              <v-card class="card-content">
+                <div class="card-content-list px-4 px-md-0 mt-5">
+                  <div class="payment-items pb-4 d-flex justify-space-between">
+                    <p class="payment-items__heading mb-0">Bank Name</p>
+                    <p class="payment-items__detail mb-0">Wema Bank</p>
+                  </div>
+
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Account Number</p>
+                    <div>
+                      <div class="payment-items__detail mb-0 d-flex">
+                        <input
+                          v-on:focus="$event.target.select()"
+                          ref="clone"
+                          readonly
+                          :value="807313678"
+                        />
+                        <!-- <span ref="message">807313678</span> -->
+                        <img
+                          src="../assets/content-copy.svg"
+                          class="d-block ml-2"
+                          @click="copy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Account Name</p>
+                    <p class="payment-items__detail mb-0 d-flex">MR PEAK X</p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-end">
+                  <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
+                    I have made Payment
+                  </button>
+                </div>
+              </v-card>
+            </v-tab-item>
+          </v-tabs-items>
+        </v-card>
+      </v-dialog>
+
+      <v-snackbar v-model="snackbar" timeout="500">
+        {{ text }}
+      </v-snackbar>
     </v-col>
   </v-row>
 </template>
@@ -147,6 +242,14 @@ export default {
   data() {
     return {
       model: 'tab-2',
+      payment: 'tab-1',
+      message: '',
+      snackbar: false,
+      text: 'Copied to clipboard',
+
+      dialog: true,
+
+      paymentHeading: ['Bank', 'Crypto Wallet'],
 
       heading: ['Classic', 'One-on-one'],
 
@@ -196,10 +299,23 @@ export default {
       ],
     };
   },
+
+  methods: {
+    copy() {
+      // this.$refs.clone.focus();
+      navigator.clipboard.writeText('807313678').then(() => {
+        this.snackbar = true;
+      });
+      // document.execCommand('copy');
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+input {
+  width: 86px;
+}
 .mentorship-wrapper {
   height: 100vh;
   margin: 0 !important;
@@ -276,6 +392,54 @@ button {
   color: #fff;
   font-weight: 700;
   background-color: #0582ff;
+}
+
+.modal-container {
+  min-height: 30rem;
+  &-close {
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    cursor: pointer;
+    color: #979dac;
+  }
+
+  &__heading {
+    font-weight: 800;
+    font-size: 24px;
+    color: #232f3e;
+  }
+
+  &__subheading {
+    color: #001233;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__choose {
+    font-weight: 800;
+    font-size: 16px;
+    color: #001233;
+  }
+}
+
+.payment-items {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #d0dce4;
+  }
+
+  &__heading {
+    color: #5c677d;
+    font-size: 16px;
+  }
+
+  &__detail {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 540px) {
