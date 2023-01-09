@@ -10,14 +10,14 @@
       md="10"
       class="mentorship-wrapper-second-col px-0 px-sm-8 px-md-16 py-0 pb-16"
     >
-      <mp-header>
+      <mp-header class="flex-wrap">
         <template v-slot:chevron-left
           ><router-link to="/" class="align-self-center header-link">
             <img src="../assets/chevron-left.svg" alt="" /> </router-link
         ></template>
         <template v-slot:heading>Services</template>
         <template v-slot:link
-          ><router-link to="/services/signal" class="header-link"
+          ><router-link to="/services/signal" class="header-link ml-7"
             >TRADE-IDEA <img src="../assets/rarr.svg" class="ml-2" alt=""
           /></router-link>
         </template>
@@ -287,7 +287,7 @@ export default {
       snackbar: false,
       text: 'Copied to clipboard',
 
-      dialog: true,
+      dialog: false,
 
       paymentHeading: ['Bank', 'Crypto Wallet'],
 
