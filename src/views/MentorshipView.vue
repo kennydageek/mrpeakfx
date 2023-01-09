@@ -197,7 +197,7 @@
                         <!-- <span ref="message">807313678</span> -->
                         <img
                           src="../assets/content-copy.svg"
-                          class="d-block ml-2"
+                          class="d-block ml-2 clipboard"
                           @click="copy"
                           alt=""
                         />
@@ -210,6 +210,46 @@
                   >
                     <p class="payment-items__heading mb-0">Account Name</p>
                     <p class="payment-items__detail mb-0 d-flex">MR PEAK X</p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-end">
+                  <a href="#" target="_blank" @click="dialog = false">
+                    <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
+                      I have made Payment
+                    </button>
+                  </a>
+                </div>
+              </v-card>
+            </v-tab-item>
+          </v-tabs-items>
+
+          <v-tabs-items v-model="payment" v-if="payment === 'tab-2'">
+            <v-tab-item v-for="i in 2" :key="i" :value="`tab-${i}`">
+              <v-card class="card-content">
+                <div class="card-content-list px-4 px-md-0 mt-5">
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Wallet id</p>
+                    <div>
+                      <div class="payment-items__detail mb-0 d-flex">
+                        <input
+                          class="input"
+                          v-on:focus="$event.target.select()"
+                          ref="clone"
+                          readonly
+                          :value="12940274250"
+                        />
+                        <!-- <span ref="message">807313678</span> -->
+                        <img
+                          src="../assets/content-copy.svg"
+                          class="d-block ml-2 clipboard"
+                          @click="copy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -306,7 +346,11 @@ export default {
       navigator.clipboard.writeText('807313678').then(() => {
         this.snackbar = true;
       });
-      // document.execCommand('copy');
+    },
+    copyWallet() {
+      navigator.clipboard.writeText('12940274250').then(() => {
+        this.snackbar = true;
+      });
     },
   },
 };
@@ -316,6 +360,15 @@ export default {
 input {
   width: 86px;
 }
+
+.input {
+  width: 106px;
+}
+
+.clipboard {
+  cursor: pointer;
+}
+
 .mentorship-wrapper {
   height: 100vh;
   margin: 0 !important;
