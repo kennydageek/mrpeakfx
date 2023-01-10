@@ -54,11 +54,11 @@ export default {};
 
 .heading {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 22px;
   line-height: 6rem;
   align-self: center;
   margin-bottom: 0;
   font-family: 'avenir-lt-pro';
-  font-weight: 600;
+  font-weight: 700;
 }
 </style>

@@ -412,7 +412,7 @@ export default {
 
   &-second-col {
     & img {
-      width: 3rem;
+      width: 48px;
     }
   }
 }
@@ -441,6 +441,14 @@ export default {
   .section-footer-first-col__heading {
     font-size: 35px;
     line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 911.98px) {
+  .section-about {
+    & .row-wrapper {
+      background-image: none;
+    }
   }
 }
 </style>

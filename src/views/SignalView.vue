@@ -1,13 +1,13 @@
 <template>
   <v-row class="mentorship-wrapper">
     <v-col
-      cols="2"
+      cols="3"
       class="d-none d-md-block blue mentorship-wrapper-first-col"
     ></v-col>
 
     <v-col
       cols="12"
-      md="10"
+      md="9"
       class="mentorship-wrapper-second-col px-0 px-sm-8 px-md-16 py-0 pb-16"
     >
       <mp-header class="flex-wrap">
@@ -26,7 +26,11 @@
       </mp-header>
 
       <div class="page-heading mt-16 px-4 px-md-0 d-flex justify-start">
-        <img src="../assets/ts-box.svg" class="align-self-center" alt="" />
+        <img
+          src="../assets/ts-box-variant.svg"
+          class="align-self-center"
+          alt=""
+        />
         <div class="page-heading__heading align-self-center ml-5">
           Trade-Idea/Signal
         </div>
@@ -377,7 +381,7 @@ input {
 }
 
 .mentorship-wrapper-first-col {
-  background-image: url('../assets/ment-background.png');
+  background-image: url('../assets/signal-background.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -416,6 +420,10 @@ input {
 
 .v-sheet.v-card:not(.v-sheet--outlined) {
   box-shadow: none !important;
+}
+
+.tab-comp {
+  font-size: 16px;
 }
 
 .price-box {
@@ -513,6 +521,10 @@ button {
 
   .price-box {
     width: 90%;
+
+    &--small {
+      width: 192px;
+    }
   }
 }
 </style>

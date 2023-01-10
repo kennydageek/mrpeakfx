@@ -1,13 +1,13 @@
 <template>
   <v-row class="mentorship-wrapper">
     <v-col
-      cols="2"
+      cols="3"
       class="d-none d-md-block blue mentorship-wrapper-first-col"
     ></v-col>
 
     <v-col
       cols="12"
-      md="10"
+      md="9"
       class="mentorship-wrapper-second-col px-0 px-sm-8 px-md-16 py-0 pb-16"
     >
       <mp-header class="flex-wrap">
@@ -414,6 +414,10 @@ input {
 
 .v-sheet.v-card:not(.v-sheet--outlined) {
   box-shadow: none !important;
+}
+
+.tab-comp {
+  font-size: 16px;
 }
 
 .price-box {

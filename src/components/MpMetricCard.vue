@@ -36,7 +36,7 @@ export default {};
 }
 
 .card-content {
-  font-size: 0.8rem;
+  font-size: 15px;
   color: #000;
   font-weight: 500;
 }
