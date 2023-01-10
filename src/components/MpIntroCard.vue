@@ -5,7 +5,7 @@
         <img src="../assets/mrpeak.png" alt="" />
       </div>
     </v-col>
-    <v-col cols="12" md="7" class="intro-container pr-0 pr-md-16">
+    <v-col cols="12" md="7" class="intro-container px-3">
       <!-- <p class="about d-none d-sm-block">about</p> -->
       <p class="heading-title mb-0 text-center text-md-left">
         Forex trading expert
@@ -13,7 +13,7 @@
       <p class="intro-text mb-0 text-center text-md-left">
         Hi, my name is Mr PeakFx
       </p>
-      <p class="intro-details px-16 px-md-0 mb-0 mt-6 text-center text-md-left">
+      <p class="intro-details px-7 px-md-0 mb-0 mt-6 text-justify text-md-left">
         I am a professional trader who have been in the trading space for about
         5 years . My expertise is to take you from the place of inconsistent
         trading results to a place of bigger wins.
