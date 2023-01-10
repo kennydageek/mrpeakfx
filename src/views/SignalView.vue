@@ -148,7 +148,7 @@
             Make Payment
           </button>
         </template>
-        <v-card class="modal-container px-12 py-10">
+        <v-card class="modal-container px-4 px-sm-12 py-10">
           <p class="modal-container-close" @click="dialog = false">x</p>
 
           <p class="modal-container__heading mb-6">Make Payment 💳</p>
