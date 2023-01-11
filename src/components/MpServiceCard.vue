@@ -1,5 +1,10 @@
 <template>
-  <div class="card-container pb-10">
+  <div
+    class="card-container pb-10"
+    data-aos="fade-up"
+    data-aos-duration="1500"
+    data-aos-easing="ease"
+  >
     <div class="card-top-img">
       <img :src="items.img" alt="" class="card-img" />
     </div>

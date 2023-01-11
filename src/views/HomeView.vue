@@ -1,10 +1,19 @@
 <template>
   <div class="px-0 px-sm-8 px-md-16 home-container">
-    <mp-header>
+    <mp-header
+      data-aos="fade-left"
+      data-aos-duration="1500"
+      data-aos-easing="ease"
+    >
       <template v-slot:heading>Home</template>
     </mp-header>
 
-    <v-row class="mt-3 header-containers px-7 justify-space-between">
+    <v-row
+      class="mt-3 header-containers px-7 justify-space-between"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+      data-aos-easing="ease"
+    >
       <v-col class="header-text" cols="12" md="6">
         <img class="img-right" src="../assets/design.svg" alt="" />
         <img
@@ -26,19 +35,30 @@
     </v-row>
 
     <section class="section-container section-card px-0 px-md-7">
-      <mp-intro-card />
+      <mp-intro-card
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      />
     </section>
 
     <section class="section-metrics mt-16 pt-10 px-10">
-      <h1 class="section-heading">The best choice for your Forex journey</h1>
+      <h1>The best choice for your Forex journey</h1>
 
-      <p class="section-subheading mt-8">
+      <p>
         End-to-end trading and market analysis in a single solution. You’re in
         the right platform to help realize your profits
       </p>
 
-      <v-row class="mt-12 justify-center">
-        <v-col cols="12" md="4" class="first-col text-center">
+      <v-row>
+        <v-col
+          cols="12"
+          md="4"
+          class="first-col text-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
           <p class="metric-no mb-0">100+</p>
           <p class="client">clients work nationwide</p>
         </v-col>
@@ -107,7 +127,12 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="align-self-start">
-          <div class="section-about-text-wrapper px-5">
+          <div
+            class="section-about-text-wrapper px-5"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease"
+          >
             <p class="section-about__heading mb-2">Learn more about Me</p>
             <p class="section-about__intro mb-3">I am Mr PeakFX</p>
             <p class="section-about__paragraph mb-0">
@@ -141,7 +166,14 @@
 
     <section class="section-footer">
       <v-row class="section-footer-wrapper pa-10">
-        <v-col cols="12" md="5" class="section-footer-first-col">
+        <v-col
+          cols="12"
+          md="5"
+          class="section-footer-first-col"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
           <p class="section-footer-first-col__heading">
             Get the best out of your trading experience
           </p>
@@ -153,6 +185,9 @@
           col="12"
           md="7"
           class="section-footer-second-col align-self-center"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
         >
           <div
             class="section-footer-second-col-socials d-flex justify-center mt-8 mt-md-0"
@@ -189,7 +224,7 @@ export default {
           img: require('@/assets/mentorship.png'),
           logo: require('@/assets/me-box.svg'),
           title: 'MENTORSHIP',
-          path: '/services/mentorship',
+          path: '/services/mentorship#',
           cta: 'Read More',
         },
 
@@ -197,7 +232,7 @@ export default {
           img: require('@/assets/trade-idea.png'),
           logo: require('@/assets/ts-box.svg'),
           title: 'TRADE-IDEA/SIGNAL',
-          path: '/services/signal',
+          path: '/services/signal#',
           cta: 'Read More',
         },
 
@@ -205,7 +240,7 @@ export default {
           img: require('@/assets/community.png'),
           logo: require('@/assets/co-box.svg'),
           title: 'JOIN OUR COMMUNITY',
-          path: '/services/community',
+          path: '/services/community#',
           cta: 'Join Now',
         },
       ],

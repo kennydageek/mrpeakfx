@@ -1,5 +1,10 @@
 <template>
-  <div class="metric-card-container pa-4">
+  <div
+    class="metric-card-container pa-4"
+    data-aos="fade-up"
+    data-aos-duration="1500"
+    data-aos-easing="ease"
+  >
     <slot name="img"><img src="../assets/01.svg" alt="" /></slot>
 
     <slot name="heading"

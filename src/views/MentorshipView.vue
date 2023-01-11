@@ -1,5 +1,10 @@
 <template>
-  <v-row class="mentorship-wrapper">
+  <v-row
+    class="mentorship-wrapper"
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    data-aos-easing="ease"
+  >
     <v-col
       cols="3"
       class="d-none d-md-block blue mentorship-wrapper-first-col"
@@ -17,7 +22,7 @@
         ></template>
         <template v-slot:heading>Services</template>
         <template v-slot:link
-          ><router-link to="/services/signal" class="header-link ml-7"
+          ><router-link to="/services/signal#" class="header-link ml-7"
             >TRADE-IDEA <img src="../assets/rarr.svg" class="ml-2" alt=""
           /></router-link>
         </template>

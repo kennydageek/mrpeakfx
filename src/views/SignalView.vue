@@ -1,5 +1,10 @@
 <template>
-  <v-row class="mentorship-wrapper">
+  <v-row
+    class="mentorship-wrapper"
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    data-aos-easing="ease"
+  >
     <v-col
       cols="3"
       class="d-none d-md-block blue mentorship-wrapper-first-col"
@@ -18,7 +23,7 @@
         <template v-slot:heading>Services</template>
         <template v-slot:link
           ><router-link
-            to="/services/mentorship"
+            to="/services/mentorship#"
             class="header-link d-flex flex-wrap ml-7"
             >MENTORSHIP <img src="../assets/rarr.svg" class="ml-2" alt=""
           /></router-link>

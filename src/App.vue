@@ -41,6 +41,6 @@ html {
   color: #000;
   font-family: 'Manrope';
   font-size: 16px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 </style>

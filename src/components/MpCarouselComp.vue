@@ -1,5 +1,12 @@
 <template>
-  <v-carousel v-model="model" hide-delimiter-background height="auto">
+  <v-carousel
+    v-model="model"
+    hide-delimiter-background
+    height="auto"
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    data-aos-easing="ease"
+  >
     <v-carousel-item v-for="customer in customers" :key="customer.name">
       <v-row align="center" justify="center">
         <mp-review-card :customers="customer" />

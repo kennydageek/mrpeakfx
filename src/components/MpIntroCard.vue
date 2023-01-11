@@ -5,7 +5,7 @@
         <img src="../assets/mrpeak.png" alt="" />
       </div>
     </v-col>
-    <v-col cols="12" md="7" class="intro-container px-3">
+    <v-col cols="12" md="7" class="intro-container px-3 pr-md-16">
       <!-- <p class="about d-none d-sm-block">about</p> -->
       <p class="heading-title mb-0 text-center text-md-left">
         Forex trading expert

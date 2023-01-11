@@ -5,6 +5,8 @@ import store from './store';
 import upperFirst from 'lodash/upperFirst';
 import camelCase from 'lodash/camelCase';
 import vuetify from '@/plugins/vuetify';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 Vue.config.productionTip = false;
 
@@ -31,5 +33,8 @@ new Vue({
   vuetify,
   router,
   store,
+  mounted() {
+    AOS.init();
+  },
   render: (h) => h(App),
 }).$mount('#app');
