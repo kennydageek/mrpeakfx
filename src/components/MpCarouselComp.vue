@@ -3,7 +3,7 @@
     v-model="model"
     hide-delimiter-background
     height="auto"
-    data-aos="fade-left"
+    data-aos="fade-up"
     data-aos-duration="1500"
     data-aos-easing="ease"
   >

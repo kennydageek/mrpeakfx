@@ -1,7 +1,7 @@
 <template>
   <div class="px-0 px-sm-8 px-md-16 home-container">
     <mp-header
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-easing="ease"
     >
@@ -10,7 +10,7 @@
 
     <v-row
       class="mt-3 header-containers px-7 justify-space-between"
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-easing="ease"
     >
@@ -50,7 +50,7 @@
         the right platform to help realize your profits
       </p>
 
-      <v-row>
+      <v-row class="mt-5">
         <v-col
           cols="12"
           md="4"
@@ -129,7 +129,7 @@
         <v-col cols="12" md="6" class="align-self-start">
           <div
             class="section-about-text-wrapper px-5"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-easing="ease"
           >
@@ -170,7 +170,7 @@
           cols="12"
           md="5"
           class="section-footer-first-col"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-easing="ease"
         >
@@ -183,11 +183,8 @@
         </v-col>
         <v-col
           col="12"
-          md="7"
+          md="6"
           class="section-footer-second-col align-self-center"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-easing="ease"
         >
           <div
             class="section-footer-second-col-socials d-flex justify-center mt-8 mt-md-0"

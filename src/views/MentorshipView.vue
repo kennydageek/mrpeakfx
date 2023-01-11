@@ -1,10 +1,5 @@
 <template>
-  <v-row
-    class="mentorship-wrapper"
-    data-aos="fade-left"
-    data-aos-duration="1500"
-    data-aos-easing="ease"
-  >
+  <v-row class="mentorship-wrapper">
     <v-col
       cols="3"
       class="d-none d-md-block blue mentorship-wrapper-first-col"
@@ -39,7 +34,12 @@
         </div>
       </div>
 
-      <v-card class="mt-16">
+      <v-card
+        class="mt-16"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      >
         <template>
           <v-tabs v-model="model" slider-color="#ccc">
             <v-tab

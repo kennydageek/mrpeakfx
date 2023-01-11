@@ -45,4 +45,10 @@ export default {};
   color: #000;
   font-weight: 500;
 }
+
+@media screen and (max-width: 300px) {
+  .metric-card-container {
+    width: 100%;
+  }
+}
 </style>
