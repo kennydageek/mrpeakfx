@@ -14,10 +14,20 @@
 
     <div class="card-footer mt-16">
       <p class="title">{{ items.title }}</p>
-      <router-link :to="items.path" class="d-flex link">
+      <router-link v-if="!items.anchor" :to="items.path" class="d-flex link">
         <p class="text mb-0">{{ items.cta }}</p>
         <img src="../assets/rarr.svg" class="ml-2" alt="" />
       </router-link>
+
+      <a
+        v-if="items.anchor"
+        href="https://t.me/PeakFX_Signals"
+        target="_blank"
+        class="d-flex link"
+      >
+        <p class="text mb-0">{{ items.cta }}</p>
+        <img src="../assets/rarr.svg" class="ml-2" alt="" />
+      </a>
     </div>
   </div>
 </template>

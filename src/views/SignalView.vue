@@ -221,7 +221,11 @@
                 </div>
 
                 <div class="d-flex justify-end">
-                  <a href="#" target="_blank" @click="dialog = false">
+                  <a
+                    href="https://t.me/mrpeaksupport"
+                    target="_blank"
+                    @click="dialog = false"
+                  >
                     <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
                       I have made Payment
                     </button>

@@ -20,7 +20,7 @@
       </p>
 
       <div class="btn-cta d-flex justify-center justify-md-start mt-8">
-        <a href="#">
+        <a href="#services">
           <button class="button">Let’s Talk 👋</button>
         </a>
       </div>

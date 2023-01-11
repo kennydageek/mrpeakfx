@@ -99,7 +99,7 @@
     </section>
 
     <section class="section-service black px-7 px-sm-16">
-      <v-row class="justify-center">
+      <v-row class="justify-center" id="services">
         <v-col
           cols="12"
           md="3"
@@ -192,9 +192,15 @@
           <div
             class="section-footer-second-col-socials d-flex justify-center mt-8 mt-md-0"
           >
-            <img src="../assets/telegram.svg" alt="" />
-            <img src="../assets/instagram.svg" class="ml-5" alt="" />
-            <img src="../assets/youtube.svg" class="ml-5" alt="" />
+            <a href="https:/t.me/mrpeaksupport" target="_blank">
+              <img src="../assets/telegram.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/mr_peakfx/" target="_blank">
+              <img src="../assets/instagram.svg" class="ml-5" alt="" />
+            </a>
+            <a href="https://www.youtube.com/@mrpeakfx7064" target="_blank">
+              <img src="../assets/youtube.svg" class="ml-5" alt="" />
+            </a>
           </div>
         </v-col>
       </v-row>
@@ -226,6 +232,7 @@ export default {
           title: 'MENTORSHIP',
           path: '/services/mentorship#',
           cta: 'Read More',
+          anchor: false,
         },
 
         {
@@ -234,14 +241,16 @@ export default {
           title: 'TRADE-IDEA/SIGNAL',
           path: '/services/signal#',
           cta: 'Read More',
+          anchor: false,
         },
 
         {
           img: require('@/assets/community.png'),
           logo: require('@/assets/co-box.svg'),
           title: 'JOIN OUR COMMUNITY',
-          path: '/services/community#',
+          // path: 'https://t.me/PEAKFX_Signals',
           cta: 'Join Now',
+          anchor: true,
         },
       ],
     };
