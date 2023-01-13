@@ -34,7 +34,7 @@
       </v-col>
     </v-row>
 
-    <section class="section-container section-card px-0 px-md-7">
+    <section class="section-container section-card px-7 px-md-7">
       <mp-intro-card
         data-aos="fade-up"
         data-aos-duration="1500"
@@ -465,6 +465,9 @@ export default {
   }
 }
 
+.col {
+  padding: 12px 0 !important;
+}
 .disclaimer {
   font-size: 14px;
   margin-top: 20px;
