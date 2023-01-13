@@ -1,7 +1,7 @@
 <template>
   <div class="review-card-container pa-6">
     <div class="review-card-container-header d-flex mb-7">
-      <img src="../assets/charles.svg" alt="" />
+      <img :src="customers.img" alt="" />
       <div class="ml-3 mb-0 align-self-center">
         <p class="name mb-1">{{ customers.name }}</p>
         <p class="role mb-0">{{ customers.role }}</p>

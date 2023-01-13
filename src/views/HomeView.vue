@@ -165,7 +165,7 @@
     </section>
 
     <section class="section-footer">
-      <v-row class="section-footer-wrapper pa-10">
+      <v-row class="section-footer-wrapper pa-10 pb-1">
         <v-col
           cols="12"
           md="5"
@@ -199,6 +199,13 @@
               <img src="../assets/youtube.svg" class="ml-5" alt="" />
             </a>
           </div>
+        </v-col>
+
+        <v-col cols="12" class="d-flex justify-center">
+          <p class="disclaimer">
+            <span>Disclamer:</span> Trading the foreign exchange market carries
+            a high level of risk, and may not be suitable for all investors
+          </p>
         </v-col>
       </v-row>
     </section>
@@ -455,6 +462,18 @@ export default {
     & img {
       width: 48px;
     }
+  }
+}
+
+.disclaimer {
+  font-size: 14px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  justify-self: center;
+  & span {
+    color: red;
+    font-weight: 600;
   }
 }
 

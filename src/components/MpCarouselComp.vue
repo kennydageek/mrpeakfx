@@ -25,35 +25,25 @@ export default {
     model: 0,
     customers: [
       {
-        img: require('@/assets/charles.svg'),
-        name: 'Charles',
+        img: require('@/assets/anthonia.svg'),
+        name: 'Anthonia Oluchi',
         role: 'Mentee',
-        review:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus arcu, dictum in eros ut, dignissim efficitur tortor. Integer eget eros sed justo finibus vehicula sit amet non mauris. Cras condimentum ullamcorper lectus, vitae tempor ante gravida eget.',
+        review: `Sir @⁨MrPeak⁩  ❤️. I have to appreciate you publicly. Thank you for everything you have done for me/us so far. May God continue to replenish your pockets x1000000. You will never lack in any areas that concern you. 
+        I’m still a work in progress but you have been a rock ✅🔥 `,
+      },
+      {
+        img: require('@/assets/charles.svg'),
+        name: 'Kehinde Ajibade',
+        role: 'Mentee',
+        review: `It's so difficult in this industry to make it without the help of a good and sincere mentor, that has your interest in mind, and desires to see you been profitable. I benefited and still benefiting from that kind of mentor, it's a privilege to learn from you sir. Mr Peak put it all together for me and make me see trading in an easy way...`,
       },
 
       {
-        img: require('@/assets/charles.svg'),
+        img: require('@/assets/kehinde.svg'),
         name: 'Stephie',
         role: 'Signal Subscriber',
         review:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus arcu, dictum in eros ut, dignissim efficitur tortor. Integer eget eros sed justo finibus vehicula sit amet non mauris. Cras condimentum ullamcorper lectus, vitae tempor ante gravida eget.',
-      },
-
-      {
-        img: require('@/assets/charles.svg'),
-        name: 'Sophia',
-        role: 'Community Member',
-        review:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus arcu, dictum in eros ut, dignissim efficitur tortor. Integer eget eros sed justo finibus vehicula sit amet non mauris. Cras condimentum ullamcorper lectus, vitae tempor ante gravida eget.',
-      },
-
-      {
-        img: require('@/assets/charles.svg'),
-        name: 'Sylvia',
-        role: 'Mentee',
-        review:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus arcu, dictum in eros ut, dignissim efficitur tortor. Integer eget eros sed justo finibus vehicula sit amet non mauris. Cras condimentum ullamcorper lectus, vitae tempor ante gravida eget.',
+          'I would say that joining and learning from  Mr PeakFX has been the best decision I took in 2022.. He really made trading so easy and was able to make me believe that I can make it through in trading.. His concept and strategies is top-notch💯👌🏽',
       },
     ],
   }),
