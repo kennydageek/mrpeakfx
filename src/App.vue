@@ -1,6 +1,16 @@
 <template>
   <v-app>
     <v-main>
+      <div class="sticky-message text-center blue">
+        <p class="mb-0">
+          <a
+            href="https://www.fpmarkets.com/?fpm-affiliate-utm-source=IB&fpm-affiliate-agt=19058"
+            target="_blank"
+          >
+            Click to open a live trading account with FpMarkets &nbsp;
+          </a>
+        </p>
+      </div>
       <router-view />
     </v-main>
   </v-app>
@@ -43,5 +53,28 @@ html {
   font-family: 'Manrope';
   font-size: 16px;
   // overflow-x: hidden;
+}
+
+.sticky-message {
+  background-image: linear-gradient(
+    102.46deg,
+    #0466c8 12.91%,
+    #140152 163.44%,
+    #33415c 247.22%
+  );
+  padding: 1.5rem 0;
+  color: white;
+  font-weight: 600;
+}
+
+.sticky-message p a {
+  color: white;
+  transition: all 0.2s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(160, 239, 160);
+    text-decoration: underline;
+  }
 }
 </style>

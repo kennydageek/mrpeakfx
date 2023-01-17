@@ -2,7 +2,7 @@
   <v-row class="card-container mt-10 pt-10 pb-10 pb-md-0">
     <v-col cols="12" md="5" class="left-col pa-0">
       <div class="image-container d-flex d-md-block justify-center px-5">
-        <img src="../assets/mrpeak.png" alt="" />
+        <img src="../assets/intro-card.svg" alt="" />
       </div>
     </v-col>
     <v-col cols="12" md="7" class="intro-container px-3 pr-md-16">

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <v-row class="mentorship-wrapper">
     <v-col
@@ -82,12 +83,13 @@
                 </div>
               </div>
             </v-card>
+
             <div
-              class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex flex-wrap justify-space-around"
+              class="price-box price-box--small mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
             >
               <div
-                class="price-box-price px-10 py-10 text-center mt-10"
-                v-for="price in prices"
+                class="price-box-price px-10 text-center"
+                v-for="price in secondprices"
                 :key="price.venue"
               >
                 <p class="price-box__heading mb-2">{{ price.price }}</p>
@@ -108,7 +110,7 @@
               <div class="card-content-list px-4 px-md-0 mt-5">
                 <div
                   class="list-item d-flex mb-4"
-                  v-for="items in list"
+                  v-for="items in eliteList"
                   :key="items.paragraph"
                 >
                   <img
@@ -123,11 +125,11 @@
               </div>
             </v-card>
             <div
-              class="price-box price-box--small mt-12 mx-4 mx-md-0 pa-7 d-flex justify-space-around"
+              class="price-box mt-12 mx-4 mx-md-0 pa-7 d-flex flex-wrap justify-space-around"
             >
               <div
-                class="price-box-price px-10 text-center"
-                v-for="price in secondprices"
+                class="price-box-price px-10 py-10 text-center mt-10"
+                v-for="price in prices"
                 :key="price.venue"
               >
                 <p class="price-box__heading mb-2">{{ price.price }}</p>
@@ -186,7 +188,7 @@
                 <div class="card-content-list px-4 px-md-0 mt-5">
                   <div class="payment-items pb-4 d-flex justify-space-between">
                     <p class="payment-items__heading mb-0">Bank Name</p>
-                    <p class="payment-items__detail mb-0">Wema Bank</p>
+                    <p class="payment-items__detail mb-0">Access Bank</p>
                   </div>
 
                   <div
@@ -198,8 +200,7 @@
                         <input
                           v-on:focus="$event.target.select()"
                           ref="clone"
-                          readonly
-                          :value="807313678"
+                          value="0732344001"
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
@@ -216,7 +217,9 @@
                     class="payment-items pb-4 d-flex justify-space-between mt-4"
                   >
                     <p class="payment-items__heading mb-0">Account Name</p>
-                    <p class="payment-items__detail mb-0 d-flex">MR PEAK X</p>
+                    <p class="payment-items__detail mb-0 d-flex">
+                      Igba Matthew A
+                    </p>
                   </div>
                 </div>
 
@@ -250,7 +253,7 @@
                           v-on:focus="$event.target.select()"
                           ref="clone"
                           readonly
-                          :value="12940274250"
+                          value=""
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
@@ -259,6 +262,30 @@
                           @click="copy"
                           alt=""
                         />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Wallet Details</p>
+                    <div>
+                      <div class="payment-items__detail mb-0 d-flex">
+                        <input
+                          class="input d-flex mr-1"
+                          v-on:focus="$event.target.select()"
+                          ref="clone"
+                          readonly
+                          value="USDT -TRC20"
+                        />
+                        <!-- <span ref="message">807313678</span> -->
+                        <!-- <img
+                          src="../assets/content-copy.svg"
+                          class="d-block ml-2 clipboard"
+                          @click="copy"
+                          alt=""
+                        /> -->
                       </div>
                     </div>
                   </div>
@@ -311,7 +338,7 @@ export default {
         },
         {
           price: '$400',
-          venue: 'Online',
+          venue: 'Quarterly',
         },
 
         {
@@ -339,7 +366,7 @@ export default {
 
         {
           img: require('../assets/rarr.svg'),
-          paragraph: '4-10 trades per week.',
+          paragraph: '4-10 trade ideas per week.',
         },
 
         {
@@ -352,20 +379,49 @@ export default {
           paragraph: 'Low risk, High reward trades',
         },
       ],
+
+      eliteList: [
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: '2-10 trades per week with entry and SL',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Unlimited trade ideas',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Weekly live top-down analysis',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Free weekly classes on ICT and algo concept',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Live trading sessions',
+        },
+      ],
     };
   },
 
   methods: {
     copy() {
       // this.$refs.clone.focus();
-      navigator.clipboard.writeText('807313678').then(() => {
+      navigator.clipboard.writeText('0732344001').then(() => {
         this.snackbar = true;
       });
     },
     copyWallet() {
-      navigator.clipboard.writeText('12940274250').then(() => {
-        this.snackbar = true;
-      });
+      navigator.clipboard
+        .writeText('TNE3b9ie4yCJihh4iG2ySE51eUQC4EdACc')
+        .then(() => {
+          this.snackbar = true;
+        });
     },
   },
 };
