@@ -184,7 +184,7 @@
                 <div class="card-content-list px-4 px-md-0 mt-5">
                   <div class="payment-items pb-4 d-flex justify-space-between">
                     <p class="payment-items__heading mb-0">Bank Name</p>
-                    <p class="payment-items__detail mb-0">Wema Bank</p>
+                    <p class="payment-items__detail mb-0">Access Bank</p>
                   </div>
 
                   <div
@@ -197,7 +197,7 @@
                           v-on:focus="$event.target.select()"
                           ref="clone"
                           readonly
-                          :value="807313678"
+                          value="0732344001s"
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
@@ -214,7 +214,9 @@
                     class="payment-items pb-4 d-flex justify-space-between mt-4"
                   >
                     <p class="payment-items__heading mb-0">Account Name</p>
-                    <p class="payment-items__detail mb-0 d-flex">MR PEAK X</p>
+                    <p class="payment-items__detail mb-0 d-flex">
+                      Igba Matthew A.
+                    </p>
                   </div>
                 </div>
 
@@ -257,6 +259,29 @@
                           @click="copy"
                           alt=""
                         />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Wallet Details</p>
+                    <div>
+                      <div class="payment-items__detail mb-0 d-flex">
+                        <input
+                          class="input d-flex mr-1"
+                          v-on:focus="$event.target.select()"
+                          ref="clone"
+                          readonly
+                          value="USDT -TRC20"
+                        />
+                        <!-- <span ref="message">807313678</span> -->
+                        <!-- <img
+                          src="../assets/content-copy.svg"
+                          class="d-block ml-2 clipboard"
+                          @click="copy"
+                          alt=""
+                        /> -->
                       </div>
                     </div>
                   </div>
