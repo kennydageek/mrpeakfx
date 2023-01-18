@@ -218,6 +218,13 @@
                       Igba Matthew A.
                     </p>
                   </div>
+
+                  <div
+                    class="payment-items pb-4 d-flex justify-space-between mt-4"
+                  >
+                    <p class="payment-items__heading mb-0">Exchange Rate</p>
+                    <p class="payment-items__detail mb-0 d-flex">700/$</p>
+                  </div>
                 </div>
 
                 <div class="d-flex justify-end">
