@@ -99,7 +99,7 @@
     </section>
 
     <section class="section-service black px-7 px-sm-16">
-      <v-row class="justify-center" id="services">
+      <v-row class="justify-space-between" id="services">
         <v-col
           cols="12"
           md="3"
@@ -139,7 +139,7 @@
               I am a professional trader who have been in the trading space
               since 2019. I have gathered lots of experience in real time
               trading and I have witnessed all there is as a beginner,
-              intermediate and pro trading.
+              intermediate and pro trader.
             </p>
 
             <p class="section-about__paragraph mb-2">
@@ -150,14 +150,14 @@
             </p>
 
             <p class="section-about__paragraph mb-5">
-              As a foremost forex influencer in Nigeria and I am on a mission to
+              As a foremost forex influencer in Nigeria, I am on a mission to
               replicate my profitable trading system to as many traders or
               potential traders that come my way.
             </p>
 
             <p class="section-about__paragraph mb-16">
-              So, feel free to to send me a message, even if you are just
-              putting out a few feelers.
+              So, feel free to send me a message, even if you are just putting
+              out a few feelers.
             </p>
           </div>
         </v-col>

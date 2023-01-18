@@ -1,7 +1,7 @@
 <template>
   <v-carousel
     v-model="model"
-    hide-delimiter-background
+    hide-delimiter-background="true"
     height="auto"
     data-aos="fade-up"
     data-aos-duration="1500"

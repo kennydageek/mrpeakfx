@@ -106,7 +106,7 @@
               <div class="card-content-list px-4 px-md-0 mt-5">
                 <div
                   class="list-item d-flex mb-4"
-                  v-for="items in list"
+                  v-for="items in secondList"
                   :key="items.paragraph"
                 >
                   <img
@@ -197,7 +197,7 @@
                           v-on:focus="$event.target.select()"
                           ref="clone"
                           readonly
-                          value="0732344001s"
+                          value="0732344001"
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
@@ -250,13 +250,13 @@
                           v-on:focus="$event.target.select()"
                           ref="clone"
                           readonly
-                          :value="12940274250"
+                          value="TNE3b9ie4yCJihh4iG2ySE51eUQC4EdACc"
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
                           src="../assets/content-copy.svg"
                           class="d-block ml-2 clipboard"
-                          @click="copy"
+                          @click="copyWallet"
                           alt=""
                         />
                       </div>
@@ -288,9 +288,15 @@
                 </div>
 
                 <div class="d-flex justify-end">
-                  <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
-                    I have made Payment
-                  </button>
+                  <a
+                    href="https://t.me/mrpeaksupport"
+                    target="_blank"
+                    @click="dialog = false"
+                  >
+                    <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
+                      I have made Payment
+                    </button>
+                  </a>
                 </div>
               </v-card>
             </v-tab-item>
@@ -371,20 +377,49 @@ export default {
           paragraph: 'Access to a lifetime Mentorship Group.',
         },
       ],
+
+      secondList: [
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Proper Top-Down Analysis Approach to trading.',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Mastering Profitable Strategies that work.',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph:
+            'Trading Psychology development on how to trade personal and prop firm accounts.',
+        },
+
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'Access to a lifetime Mentorship Group.',
+        },
+        {
+          img: require('../assets/rarr.svg'),
+          paragraph: 'ACCESS TO A $100,000 PROP FIRM ACCOUNT',
+        },
+      ],
     };
   },
 
   methods: {
     copy() {
       // this.$refs.clone.focus();
-      navigator.clipboard.writeText('807313678').then(() => {
+      navigator.clipboard.writeText('0732344001').then(() => {
         this.snackbar = true;
       });
     },
     copyWallet() {
-      navigator.clipboard.writeText('12940274250').then(() => {
-        this.snackbar = true;
-      });
+      navigator.clipboard
+        .writeText('TNE3b9ie4yCJihh4iG2ySE51eUQC4EdACc')
+        .then(() => {
+          this.snackbar = true;
+        });
     },
   },
 };
@@ -392,7 +427,7 @@ export default {
 
 <style lang="scss" scoped>
 input {
-  width: 86px;
+  width: 97px;
 }
 
 .input {

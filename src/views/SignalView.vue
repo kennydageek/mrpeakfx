@@ -253,13 +253,13 @@
                           v-on:focus="$event.target.select()"
                           ref="clone"
                           readonly
-                          value=""
+                          value="TNE3b9ie4yCJihh4iG2ySE51eUQC4EdACc"
                         />
                         <!-- <span ref="message">807313678</span> -->
                         <img
                           src="../assets/content-copy.svg"
                           class="d-block ml-2 clipboard"
-                          @click="copy"
+                          @click="copyWallet"
                           alt=""
                         />
                       </div>
@@ -292,9 +292,15 @@
                 </div>
 
                 <div class="d-flex justify-end">
-                  <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
-                    I have made Payment
-                  </button>
+                  <a
+                    href="https://t.me/mrpeaksupport"
+                    target="_blank"
+                    @click="dialog = false"
+                  >
+                    <button class="mx-4 mx-md-0 py-3 px-8 mt-10 mb-16">
+                      I have made Payment
+                    </button>
+                  </a>
                 </div>
               </v-card>
             </v-tab-item>
@@ -429,7 +435,7 @@ export default {
 
 <style lang="scss" scoped>
 input {
-  width: 86px;
+  width: 97px;
 }
 
 .input {

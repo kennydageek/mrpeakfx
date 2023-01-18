@@ -14,8 +14,8 @@
         Hi, my name is Mr PeakFx
       </p>
       <p class="intro-details px-7 px-md-0 mb-0 mt-6 text-justify text-md-left">
-        I am a professional trader who have been in the trading space for about
-        5 years . My expertise is to take you from the place of inconsistent
+        I am a professional trader who has been in the trading space for about 5
+        years . My expertise is to take you from the place of inconsistent
         trading results to a place of bigger wins.
       </p>
 

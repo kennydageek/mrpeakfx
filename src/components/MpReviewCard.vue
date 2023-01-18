@@ -47,4 +47,10 @@ export default {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 773px) {
+  .review-card-container {
+    width: 75%;
+  }
+}
 </style>
